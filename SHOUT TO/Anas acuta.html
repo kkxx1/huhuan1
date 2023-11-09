@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>针尾鸭</title>
+    <link rel="stylesheet" href="daohl.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #nav {
+            width: 100%;
+            height: 100px;
+        }
+
+        #name {
+            width: 100%;
+            height: 600px;
+            background: rgb(60, 60, 60);
+            position: relative;
+            margin-top: 150px;
+        }
+
+        #name1 {
+            margin: 0 auto;
+            top: 35px;
+            border: 1px solid red;
+            width: 1000px;
+            height: 530px;
+            background: rgb(60, 60, 60);
+            border: 1px solid black;
+            box-shadow: 5px 5px 8px rgb(0, 0, 0), -5px -5px 8px rgb(19, 18, 18);
+            position: relative;
+        }
+
+        #name1 h2 {
+            color: white;
+            text-align: center;
+            height: 80px;
+            border-bottom: 1px solid black;
+            line-height: 80px;
+        }
+
+        #name img {
+            width: 600px;
+            height: 400px;
+        }
+
+        #name1 ul {
+            width: 100%;
+        }
+
+        #name1 ul li {
+            float: left;
+            color: white;
+        }
+
+        #name1 ul li:first-child {
+            width: 500px;
+            height: 450px;
+            padding: 24px 0 0 20px;
+        }
+
+        #name1 ul li:last-child {
+            width: 350px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+            line-height: 40px;
+            padding-top: 80px;
+        }
+
+        #content {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        #content h2 {
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #content ul {
+            width: 1200px;
+            height: 300px;
+            margin: 50px auto 0;
+        }
+
+        #content ul li {
+            color: gray;
+            width: 60%;
+            height: 300px;
+            float: left;
+            margin: 30px 0 0 5px;
+            line-height: 25px;
+            padding: 20px 0 0 20px;
+        }
+
+        #content ul li:last-child {
+            width: 30%;
+            border-left: 1px solid rgba(0, 0, 0, 0.322);
+            line-height: 30px;
+            height: 200px;
+            color: black;
+            margin-left: 30px;
+            padding-left: 30px;
+        }
+
+        #imgs {
+            width: 100%;
+            height: 350px;
+            background: rgb(61, 58, 58);
+        }
+
+        #imgs1 {
+            width: 1200px;
+            height: 350px;
+            margin: 0 auto;
+        }
+
+        #imgs1 li {
+            width: 300px;
+            height: 200px;
+            float: left;
+            margin: 80px 0 0 75px;
+            text-align: center;
+            color: white;
+        }
+
+        #imgs1 img {
+            width: 300px;
+            height: 200px;
+        }
+
+        #cont2 {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 50px;
+        }
+
+        #cont3 {
+            width: 1000px;
+            height: 500px;
+            ;
+            margin: 20px auto 0;
+        }
+
+        #cont3 li {
+            width: 47%;
+            height: 500px;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #cont3 li h2 {
+            color: #939597;
+            width: 200px;
+            height: 40px;
+            background: #F5df4d;
+            margin: 40px 0 10px 0;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #cont3 li p {
+            color: gray;
+            letter-spacing: 1px;
+            text-indent: 2em;
+            line-height: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 返回顶部火箭 -->
+    <div id="firetop"></div>
+    <!-- 导航栏设置 -->
+    <div id="newnav">
+        <nav>
+            <div id="left">
+                <ul>
+                    <li><img src="img/lo1.jpg" alt="" width="80px " height="80px"></li>
+                    <li>SHOUT TO</li>
+                </ul>
+            </div>
+
+            <div id="nav1">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+
+                    <li>
+                        <a href="bwdw.html">资源</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="animal-3.html#dongwu">
+                                    <li>国家一级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu1">
+                                    <li>国家二级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu2">
+                                    <li>国家三级保护动物</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bwyy.html">危机</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="bwyy1.html#news1">
+                                    <li>乱砍乱伐</li>
+                                </a>
+                                <a href="bwyy1.html#news2">
+                                    <li>环境污染</li>
+                                </a>
+                                <a href="bwyy1.html#news3">
+                                    <li>乱捕滥猎</li>
+                                </a>
+                                <a href="bwyy1.html#news4">
+                                    <li>自然灾害</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cwzq.html">行动</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="cwzq1.html#news1">
+                                    <li>拒绝野味</li>
+                                </a>
+                                <a href="cwzq1.html#news2">
+                                    <li>不要打扰</li>
+                                </a>
+                                <a href="cwzq1.html#news3">
+                                    <li>拒绝饲养</li>
+                                </a>
+                                <a href="cwzq1.html#news4">
+                                    <li>注意防护</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我们</a>
+                        <div id="nr1">
+                            <ul>
+
+                                <a href="we1.html#hb">
+                                    <li>合作伙伴</li>
+                                </a>
+                                <a href="we1.html#lx">
+                                    <li>联系我们</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <div id="anmi"><img src="img/xmtb1.png" alt="" width="50px" height="50px"></div>
+            </div>
+        </nav>
+    </div>
+    <style>
+        #anmi {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            left: 275px;
+            top: -52px;
+            transition: all 1s;
+            z-index: 999;
+        }
+    </style>
+    <script>
+        var nav1 = document.getElementById('nav1');
+        var anmi = document.getElementById('anmi');
+        var lilist = nav1.getElementsByTagName('li');
+        var lilist = nav1.querySelectorAll("ul>li")
+        lilist[0].onmousemove = function () {
+            anmi.style.left = '75px';
+        };
+        lilist[0].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+        lilist[2].onmousemove = function () {
+            anmi.style.left = '475px';
+        };
+        lilist[2].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+        lilist[3].onmousemove = function () {
+            anmi.style.left = '675px';
+        };
+        lilist[3].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+        lilist[4].onmousemove = function () {
+            anmi.style.left = '875px';
+        };
+        lilist[4].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+    </script>
+    <div id="sss"></div>
+    <div id="name">
+        <div id="name1">
+            <h2>针尾鸭 Anas acuta</h2>
+            <ul>
+                <li><img src="img/针尾鸭1.jpg" alt=""></li>
+                <li>
+                    <p>界：动物界</p>
+                    <p>门：脊索动物门</p>
+                    <p>纲：鸟纲</p>
+                    <p>目：雁形目</p>
+                    <p>科：鸭科</p>
+                    <p>分布地区：中国东北和华北各省、不丹等各地</p>
+                    <p>保护级别：无危（LC） IUCN标准</p>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <ul>
+            <h2>物种概述</h2>
+            <li>
+                <p>学名：Anas acuta</p>
+                <p>中文名：针尾鸭</p>
+                <p>《世界自然保护联盟濒危物种红色名录》（IUCN）2019年 ver3.1——无危（LC）</p><br>
+                <p>针尾鸭（学名：Anas acuta）：是鸟纲、鸭科的中型游禽，属水鸭类。体长43-72厘米，体重0.5-1千克。雄鸭背部满杂以淡褐色与白色相间的波状横斑，头暗褐色，
+                    颈侧有白色纵带与下体白色相连，翼镜铜绿色，正中一对尾羽特别延长。雌鸭体型较小，上体大都黑褐色，杂以黄白色斑纹，无翼镜，尾较雄鸟短，但较其他鸭尖长。</p>
+                <p></p>
+            </li>
+            <li>
+                <p><strong>体重</strong>：♂660-1050克，♀545-660克</p>
+                <p><strong>体长</strong>：♂435-710毫米，♀525-600毫米</p>
+                <p><strong>食性</strong>：主要以草子和其他水生植物为食</p>
+                <p><strong>叫声</strong>：甚安静。雌鸟发出低喉音的kwuk-kwuk声</p>
+                <p><strong>繁殖</strong>：在1龄时性成熟，并可进行交配和营巢繁殖</p>
+                <p></p>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+    <div id="imgs">
+        <ul id="imgs1">
+            <li>
+                <img src="img/针尾鸭2.jpg" alt="">
+                <p>针尾鸭</p>
+            </li>
+            <li>
+                <img src="img/针尾鸭.jpg" alt="">
+                <p>针尾鸭</p>
+            </li>
+            <li>
+                <img src="img/针尾鸭3.jpg" alt="">
+                <p>针尾鸭</p>
+            </li>
+        </ul>
+    </div>
+    <div id="cont2">
+        <ul id="cont3">
+            <li>
+                <h2>形态特征</h2>
+                <p>针尾鸭雄鸟夏羽头顶暗褐色，具棕色羽缘，后颈中部黑褐色；头侧、颏、喉和前颈上部淡褐色，颈侧白色，呈一条白色纵带向下与腹部白色相连。背部满杂以暗褐色与灰白色相间的波状横斑，较长的肩羽有宽阔的绒黑羽端，最长的肩羽几全为绒黑色，具银灰色或棕黄色羽缘。翅上覆羽大多灰褐色，飞羽暗褐色，翅上具铜绿色翼镜。
+                </p>
+                <h2>栖息环境</h2>
+                <p>越冬期栖息于各种类型的河流、湖泊、沼泽、盐碱湿地、水塘以及开阔的沿海地带和海湾等生境中，繁殖期主要栖息于内陆大型湖泊、流速缓慢的河流、河湾及其附近的沼泽和湿草地。</p>
+                <h2>分布范围</h2>
+                <p>原产地：比利时、百慕大、不丹、柬埔寨、加拿大、开曼群岛等。中国：遍及中国东北和华北各省。冬季迁至中国北纬30°以南包括台湾的大部地区。</p>
+            </li>
+            <li>
+                <h2>生活习性</h2>
+                <p>性喜成群，特别是迁徙季节和冬季，常成几十只至数百只的大群。活动和休息多在近岸边水域和开阔的沙滩和泥地上。游泳轻快敏捷，亦善飞翔，且快速有力。在陆地上行走亦好。性胆怯而机警，白天多隐藏在有水的芦苇丛中或远离岸边的水面游荡或休息，黄昏和夜晚才到水边浅水处觅食，稍有动静，立即飞离。
+                </p>
+                <h2>繁殖方式</h2>
+                <p>在1龄时性成熟，并可进行交配和营巢繁殖。对的形成过程相当快，多数雌鸟在冬季结束之前即已结合成对，少数求偶行为持续到第二年春季迁徙期间。繁殖期4-7月。雏鸟早成性，孵出后不久即能行走和游泳，并在雌鸟带领下经过35-45天即能飞翔。
+                </p>
+
+
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    function change_bg(obj) {
+        var a = document.getElementById("nav nav1").getElementsByTagName("a");
+        for (var i = 0; i < a; i++) {
+            a[i].className = " ";
+        }
+        obj.className = "current";
+    }
+    // 火箭
+    // 当网页向下滑动 30px 出现"返回顶部" 按钮
+    (function () {
+        var firetop = document.getElementById('firetop');
+        //当有滚动时触发事件
+        window.onscroll = function () {
+            var num = window.scrollY;//获取滚动条的移动距离
+            var num1 = window.innerHeight;//屏幕可视区的高度
+            if (num > 200) {
+                firetop.style.display = 'block';//让回到顶部的小火箭出现
+            } else if (num <= 0) {
+                firetop.style.bottom = num1 + 'px';//改变定位的位置
+            }
+        }
+        //点击事件
+        firetop.onclick = function () {
+            var scrolltop = window.scrollY;
+            var timer = setInterval(function () {//定时器启动
+                scrolltop -= 50;
+                if (scrolltop <= -window.innerHeight) {
+                    firetop.style.display = 'none'; //小火箭隐藏
+                    firetop.style.animation = '';   //清除动画
+                    firetop.style.bottom = 0 + 'px';    //还原小火箭位置
+                    clearInterval(timer);
+                }
+                window.scrollTo(0, scrolltop);//设置滚动条距离顶部的距离
+            }, 30);
+            this.style = 'animation:move 2s steps(4, end) infinite;'//给动画
+        }
+
+    })();
+</script>
+
+</html>

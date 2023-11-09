@@ -1,0 +1,209 @@
+li {
+    list-style-type: none;
+}
+
+#newnav {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(37, 36, 36);
+}
+
+nav {
+    width: 1550px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav #right {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    right: 90px;
+}
+
+nav #left {
+    width: 350px;
+    height: 150px;
+    margin-left: 90px;
+    float: left;
+}
+
+nav #left li {
+    width: 250px;
+    height: 80px;
+    margin-top: 37px;
+    float: left;
+    font-size: 46px;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+}
+
+nav #left li:nth-child(1) {
+    width: 80px;
+    margin: 37px 0 0 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(60, 60, 60);
+    overflow: hidden;
+}
+
+nav #nav1 {
+    width: 1050px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 57px;
+}
+
+nav #nav1 li {
+    width: 200px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    transition: 1s;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+nav #nav1 a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 50px;
+}
+
+nav #nav1 li:nth-child(1) {
+    border-radius: 5px;
+}
+
+/* nav #nav1 li:hover #nr1{display: block;} */
+nav #nav1 li:hover {
+    background-color: rgb(240, 233, 158);
+    color: black;
+}
+
+nav #nav1 li:hover a {
+    color: black;
+}
+
+nav #nav1 #nr1 {
+    width: 200px;
+    height: 0;
+    transition-duration: 0.5s;
+    position: absolute;
+    overflow: hidden;
+    z-index: 997;
+}
+
+/* li的波浪线设置 */
+nav #nav1 #nr1::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    width: 200px;
+    height: 20px;
+    display: block;
+    background: linear-gradient(-45deg, transparent 33.33%, rgb(240, 233, 158) 33.33%, rgb(240, 233, 158) 66.66%, transparent 66.66%), linear-gradient(45deg, transparent 33.33%, rgb(240, 233, 158) 33.33%, rgb(240, 233, 158) 66.66%, transparent 66.66%);
+    ;
+    background-size: 20px 60px;
+    transform: rotateX(180deg)
+}
+
+nav #nav1 #nr1 li {
+    width: 200px;
+    height: 50px;
+    border-bottom: none;
+    border-radius: 0;
+    background: rgb(240, 233, 158);
+}
+
+nav #nav1 li:hover #nr1 {
+    height: 170px;
+}
+
+nav #nav1 li:nth-child(4):hover #nr1 {
+    height: 220px;
+}
+
+nav #nav1 li:nth-child(3):hover #nr1 {
+    height: 220px;
+}
+
+nav #nav1 li:last-child:hover #nr1 {
+    height: 120px;
+}
+
+nav #nav1 #nr1 li:hover {
+    color: white;
+    background: rgb(60, 60, 60)
+}
+
+/* 白线设置 */
+#sss {
+    width: 100%;
+    border-top: 1px solid white;
+    height: 2px;
+    position: fixed;
+    left: 0;
+    top: 150px;
+    z-index: 99;
+}
+
+#mbl {
+    z-index: 99;
+    letter-spacing: 2px;
+    height: 40px;
+    color: white;
+    background-color: rgb(60, 60, 60);
+    line-height: 40px;
+    position: fixed;
+    top: 151px;
+    width: 100%;
+}
+
+#mbl a {
+    color: white;
+    text-decoration: none;
+}
+
+#mbl a:hover {
+    color: rgb(240, 233, 158);
+}
+
+.current {
+    background-color: white;
+    color: black;
+}
+
+
+/*返回顶部火箭*/
+#firetop {
+    width: 100px;
+    height: 100px;
+    background: url(img/火箭3.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: bottom 1s;
+    display: none;
+    z-index: 1;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -2000px 0px;
+    }
+}

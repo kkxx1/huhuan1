@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>濒危原因</title>
+    <link rel="stylesheet" href="daohl.css">
+    <style>
+        * {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
+        dl {
+            width: 1200px;
+            margin: 200px auto 50px;
+            display: none;
+        }
+
+        :target {
+            display: block;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        .background {
+            background-color: rgb(60, 60, 60);
+            background-size: cover;
+        }
+
+        #mbl {
+            margin: 0;
+        }
+
+        nav #nav1 li:nth-child(4):hover #nr1 {
+            height: 220px;
+        }
+
+        nav #nav1 li:nth-child(3):hover #nr1 {
+            height: 220px;
+        }
+
+        nav #nav1 li:nth-child(5):hover #nr1 {
+            height: 120px;
+        }
+
+        #news2,
+        #news4,
+        #news1,
+        #news3 {
+            width: 1300px;
+            height: 620px;
+        }
+
+        #news2 ul,
+        #news4 ul,
+        #news1 ul,
+        #news3 ul {
+            width: 1300px;
+            height: 620px;
+        }
+
+        #news2 ul li,
+        #news4 ul li {
+            border-radius: 5px;
+            width: 580px;
+            height: 295px;
+            float: left;
+            margin: 8px 8px;
+            position: relative;
+            border: 1px solid rgb(100, 100, 100);
+            background-color: white;
+            box-shadow: 2px 2px 2px grey, -2px -2px 2px grey;
+        }
+
+        #news2 ul li img,
+        #news4 ul li img,
+        #news1 ul li img,
+        #news3 ul li img {
+            width: 300px;
+            height: 200px;
+            margin: 50px 30px;
+        }
+
+        #news2 ul li div,
+        #news4 ul li div,
+        #news1 ul li div,
+        #news3 ul li div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: 20px;
+            top: 70px;
+            text-indent: 2em;
+            text-align: left;
+            color: white;
+            line-height: 20px;
+        }
+
+        #news2 ul li div p,
+        #news4 ul li div p,
+        #news1 ul li div p,
+        #news3 ul li div p {
+            line-height: 26px;
+            color: black;
+        }
+
+
+        #news1 ul li,
+        #news3 ul li {
+            border-radius: 5px;
+            width: 580px;
+            height: 295px;
+            border: 1px solid rgb(100, 100, 100);
+            position: relative;
+            background-color: white;
+            box-shadow: 2px 2px 2px grey, -2px -2px 2px grey;
+        }
+
+        #news1 ul li:nth-child(1),
+        #news3 ul li:nth-child(1) {
+            margin: 20px auto;
+        }
+
+        #news1 ul li:nth-child(2),
+        #news1 ul li:nth-child(3),
+        #news3 ul li:nth-child(2),
+        #news3 ul li:nth-child(3) {
+            float: left;
+            margin-left: 20px;
+        }
+
+        #news1 ul li:nth-child(2),
+        #news3 ul li:nth-child(2) {
+            margin-left: 60px;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <!-- 返回顶部火箭 -->
+    <div id="firetop"></div>
+    <div id="newnav">
+        <nav>
+            <div id="left">
+                <ul>
+                    <li><img src="img/lo1.jpg" alt="" width="80px " height="80px"></li>
+                    <li>SHOUT TO</li>
+                </ul>
+            </div>
+            <div id="nav1">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+
+                    <li>
+                        <a href="bwdw.html">资源</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="animal-3.html#dongwu">
+                                    <li>国家一级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu1">
+                                    <li>国家二级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu2">
+                                    <li>国家三级保护动物</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bwyy.html">危机</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="bwyy1.html#news1">
+                                    <li>乱砍乱伐</li>
+                                </a>
+                                <a href="bwyy1.html#news2">
+                                    <li>环境污染</li>
+                                </a>
+                                <a href="bwyy1.html#news3">
+                                    <li>乱捕滥猎</li>
+                                </a>
+                                <a href="bwyy1.html#news4">
+                                    <li>自然灾害</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cwzq.html">行动</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="cwzq1.html#news1">
+                                    <li>拒绝野味</li>
+                                </a>
+                                <a href="cwzq1.html#news2">
+                                    <li>不要打扰</li>
+                                </a>
+                                <a href="cwzq1.html#news3">
+                                    <li>拒绝饲养</li>
+                                </a>
+                                <a href="cwzq1.html#news4">
+                                    <li>注意防护</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我们</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="we1.html#hb">
+                                    <li>合作伙伴</li>
+                                </a>
+                                <a href="we1.html#lx">
+                                    <li>联系我们</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <div id="anmi"><img src="img/xmtb1.png" alt="" width="50px" height="50px"></div>
+            </div>
+        </nav>
+    </div>
+    <div id="sss"></div>
+    <dl id="news1">
+        <div id="mbl">
+
+            <a href="bwyy.html">危机</a> >> <a href="bwyy1.html#news1">乱砍乱伐</a>
+
+        </div>
+        <ul>
+            <li><img src="img/砍树.jpg" alt="">
+                <div>
+                    <p>围湖造田和占用滩涂 是导致水禽、两栖和爬行动物以及鱼类濒危的主要原因。砍伐树木破坏了植被。</p>
+                </div>
+            </li>
+            <li><img src="img/乱砍乱伐1.jpg" alt="">
+                <div>
+                    <p>过度放牧 会导致土壤沙化，还会导致地上生物量和地下生物量 均大幅度地降低。</p>
+                </div>
+            </li>
+            <li><img src="img/乱砍乱伐3.jpg" alt="">
+                <div>
+                    <p>过度开垦 会导致生态环境受到破坏，出现水土流失 土地荒漠化 土壤盐碱化 、生物多样性减少等现象 。</p>
+                </div>
+            </li>
+        </ul>
+        <!-- <dt><img src="img/砍树.jpg" alt=""></dt>
+        <dd>💔 围湖造田和占用滩涂 是导致水禽、两栖和爬行动物以及鱼类濒危的主要原因。</dd>
+        <dd>💔 砍伐树木破坏了植被，造成动物的栖息地被破坏，对它们的生存环境造成威胁。</dd> 
+        <dd>💔 过度放牧 会导致土壤沙化，还会导致地上生物量和地下生物量 均大幅度地降低。</dd>         
+        <dd>💔 过度开垦 会导致生态环境受到破坏，出现水土流失 、土地荒漠化 、土壤盐碱化 、生物多样性减少等现象 。</dd> -->
+    </dl>
+    <dl id="news2">
+        <div id="mbl">
+            <a href="bwyy.html">危机</a> >> <a href="bwyy1.html#news2">环境污染</a>
+        </div>
+        <ul>
+            <li><img src="img/环境污染1.jpg" alt="">
+                <div>
+                    <p>农药 使环境中的有害物质大大增加，危害到生态和人类，形成农药污染。</p>
+                </div>
+            </li>
+            <li><img src="img/环境污染2.jpg" alt="">
+                <div>
+                    <p>大气污染对人体健康影响很大，但是，植物和动物是最无辜的，是最大的受害者。</p>
+                </div>
+            </li>
+            <li><img src="img/环境污染3.jpg" alt="">
+                <div>
+                    <p>酸雨使土壤和湖泊酸化，植被遭受破坏（死亡），湖泊中生物因为这酸性污染而死亡。</p>
+                </div>
+            </li>
+            <li><img src="img/环境污染4.jpg" alt="">
+                <div>
+                    <p>化肥 的大量使用造成了土壤有机质的降低，肥力下降，同时造成了农业环境污染，对动植物健康产生危害。</p>
+                </div>
+            </li>
+        </ul>
+        <!-- <dt><img src="img/环境5.jpg" alt=""></dt>
+        <dd> ❌ 农药 使环境中的有害物质大大增加，危害到生态和人类，形成农药污染。</dd>
+        <dd> ❌ 大气污染对人体健康影响很大，但是，植物和动物是最无辜的，是最大的受害者。</dd>
+        <dd> ❌ 酸雨使土壤和湖泊酸化，植被遭受破坏（死亡），湖泊中生物因为这酸性污染而死亡。</dd>
+        <dd> ❌ 化肥 的大量使用造成了土壤有机质的降低，肥力下降，同时造成了农业环境污染，对动植物健康产生危害。</dd>-->
+    </dl>
+    <dl id="news3">
+        <div id="mbl">
+            <a href="bwyy.html">危机</a> >> <a href="bwyy1.html#news3">乱捕滥猎</a>
+        </div>
+        <ul>
+            <li><img src="img/树木.jpg" alt="">
+                <div>
+                    <p>乱捕滥猎是造成许多物种濒危的直接原因 。滥捕乱杀野生动物，破坏了生态平衡</p>
+                </div>
+            </li>
+            <li><img src="img/乱捕滥猎.jpg" alt="">
+                <div>
+                    <p>滥捕乱杀野生动物会破坏大自然的平衡，对生态系统造成难以弥补的破坏。</p>
+                </div>
+            </li>
+            <li><img src="img/乱捕滥猎3.jpg" alt="">
+                <div>
+                    <p>每一种野生动物都是大自然中的成员，都是生态系统中不可或缺 的一环。</p>
+                </div>
+            </li>
+        </ul>
+        <!-- <dt><img src="img/树木.jpg" alt=""></dt>
+        <dd> 💔 滥捕乱杀野生动物会破坏大自然的平衡，对生态系统造成难以弥补的破坏。</dd>
+        <dd> 💔 乱捕滥猎是造成许多物种濒危的直接原因 。滥捕乱杀野生动物，破坏了生态平衡 。</dd>
+        <dd> 💔 滥捕乱杀野生动物有可能造成某些<em>有害微生物</em> 在人际间传播。</dd>
+        <dd> 💔 每一种野生动物都是大自然中的成员，都是生态系统中不可或缺 的一环。</dd> -->
+    </dl>
+    <dl id="news4">
+        <div id="mbl">
+            <a href="bwyy.html">危机</a> >> <a href="bwyy1.html#news4">自然灾害</a>
+        </div>
+        <ul>
+            <li><img src="img/自然灾害1.jpg" alt="">
+                <div>
+                    <p>旱灾可导致农作物、林木干枯死亡，造成人和动物用水和工农业生产用水困难。</p>
+                </div>
+            </li>
+            <li><img src="img/自然灾害2.jpg" alt="">
+                <div>
+                    <p>洪灾 危害农作物生长，造成农作物减产，甚至造成人和动物伤亡，还可能造成疾病流行造成更大的伤亡。</p>
+                </div>
+            </li>
+            <li><img src="img/自然灾害3.jpg" alt="">
+                <div>
+                    <p>森林是各种珍禽异兽的家园，遭受火灾后，会破坏野生动物赖以生存的环境．甚至直接烧死、烧伤野生动物。</p>
+                </div>
+            </li>
+            <li><img src="img/自然灾害4.jpg" alt="">
+                <div>
+                    <p>在发生地震之后，动物也同样地处于饥荒状态，和人类一样是断水断粮阻断了交通。</p>
+                </div>
+            </li>
+        </ul>
+        <!-- <dt><img src="img/自然.jpg" alt=""></dt>
+        <dd> ❌旱灾可导致农作物、林木干枯死亡，造成人和动物用水和工农业生产用水困难。</dd>
+        <dd> ❌洪灾 危害农作物生长，造成农作物减产，甚至造成人和动物伤亡，还可能造成疾病流行造成更大的伤亡。</dd>
+        <dd> ❌森林是各种珍禽异兽的家园，遭受火灾后，会破坏野生动物赖以生存的环境．甚至直接烧死、烧伤野生动物。</dd>
+        <dd> ❌在发生地震之后，动物也同样地处于饥荒状态，和人类一样是断水断粮阻断了交通。</dd> -->
+    </dl>
+
+</body>
+<style>
+    #anmi {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 475px;
+        top: -52px;
+        transition: all 1s;
+        z-index: 999;
+    }
+</style>
+<script>
+    var nav1 = document.getElementById('nav1');
+    var anmi = document.getElementById('anmi');
+    var lilist = nav1.getElementsByTagName('li');
+    var lilist = nav1.querySelectorAll("ul>li")
+    lilist[0].onmousemove = function () {
+        anmi.style.left = '75px';
+    };
+    lilist[0].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+    lilist[1].onmousemove = function () {
+        anmi.style.left = '275px';
+    };
+    lilist[1].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+    lilist[3].onmousemove = function () {
+        anmi.style.left = '675px';
+    };
+    lilist[3].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+    lilist[4].onmousemove = function () {
+        anmi.style.left = '875px';
+    };
+    lilist[4].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+</script>
+<script>
+
+    // 火箭
+    // 当网页向下滑动 30px 出现"返回顶部" 按钮
+    (function () {
+        var firetop = document.getElementById('firetop');
+        //当有滚动时触发事件
+        window.onscroll = function () {
+            var num = window.scrollY;//获取滚动条的移动距离
+            var num1 = window.innerHeight;//屏幕可视区的高度
+            if (num > 200) {
+                firetop.style.display = 'block';//让回到顶部的小火箭出现
+            } else if (num <= 0) {
+                firetop.style.bottom = num1 + 'px';//改变定位的位置
+            }
+        }
+        //点击事件
+        firetop.onclick = function () {
+            var scrolltop = window.scrollY;
+            var timer = setInterval(function () {//定时器启动
+                scrolltop -= 50;
+                if (scrolltop <= -window.innerHeight) {
+                    firetop.style.display = 'none'; //小火箭隐藏
+                    firetop.style.animation = '';   //清除动画
+                    firetop.style.bottom = 0 + 'px';    //还原小火箭位置
+                    clearInterval(timer);
+                }
+                window.scrollTo(0, scrolltop);//设置滚动条距离顶部的距离
+            }, 30);
+            this.style = 'animation:move 2s steps(4, end) infinite;'//给动画
+        }
+
+    })();
+</script>
+
+</html>

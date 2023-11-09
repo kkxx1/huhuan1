@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们</title>
+    <link rel="stylesheet" href="daohl.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        body {
+            background-color: rgb(60, 60, 60);
+        }
+
+        #we {
+            width: 1200px;
+            height: 800px;
+            color: white;
+            margin: 200px auto 0;
+        }
+
+        /* #we #left{width: 200px;height: 200px;float: left;margin: 0  0 0 100px;}
+        #we #left p{letter-spacing: 5px;border: 1px solid black;width:170px;height: 40px;line-height: 40px;padding-left: 30px;}
+        #we #left ul a{text-decoration: none;color: white;}
+        #we #left ul li{width: 100px;height: 20px;padding: 10px 0px 10px 0px;padding-left: 100px;border: 1px solid black;} */
+        #we #right {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #we #right #hb:target {
+            display: block;
+        }
+
+        #we #right #lx {
+            position: relative;
+            border-radius: 5px;
+            width: 1200px;
+            height: 700px;
+            clear: both;
+            display: none;
+            background-color: white;
+            color: black;
+            padding-top: 30px;
+            box-shadow: 3px 3px 2px grey, -2px -2px 2px grey;
+        }
+
+        #we #right #lx #gb {
+            width: 1000px;
+            height: 450px;
+            margin: 20px auto 10px;
+        }
+
+        #we #right #lx footer {
+            width: 300px;
+            height: 120px;
+            margin-top: 35px;
+            margin-left: 90px;
+        }
+
+        #we #right #lx footer p {
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        /*  #we #right #lx footer p:nth-child(4){float: left;}
+        #we #right #lx footer p:nth-child(5){float: left;} */
+        #we #right #lx footer p span {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        #we #right #lx #ewm {
+            width: 60px;
+            height: 180px;
+            float: right;
+            margin-top: -122px;
+            margin-right: 100px;
+        }
+
+        #we #right #lx #ewm img {
+            margin-bottom: 30px;
+        }
+
+        #we #right #lx:target {
+            display: block;
+        }
+
+        #hb {
+            width: 700px;
+            height: 600px;
+            display: none;
+            margin: 0 auto;
+        }
+
+        #hb li {
+            width: 180px;
+            height: 160px;
+            float: left;
+            margin: 25px;
+            overflow: hidden;
+        }
+
+        #hb li p {
+            width: 180px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #we #right #hb li:hover img {
+            transition: 1s;
+            transform: scale(1.2);
+        }
+
+        #hb li:nth-child(4),
+        #hb li:nth-child(5),
+        #hb li:nth-child(6) {
+            width: 160px;
+            height: 200px;
+            float: left;
+            margin: 35px;
+            overflow: hidden;
+        }
+
+        #hb li:nth-child(4) p,
+        #hb li:nth-child(5) p,
+        #hb li:nth-child(6) p {
+            width: 160px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #hb #mbl {
+            margin-left: -300px;
+        }
+
+        #zti {
+            width: 350px;
+            height: 120px;
+            position: absolute;
+            left: 400px;
+            top: 535px;
+            margin-left: 50px;
+        }
+
+        #zti p {
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="newnav">
+        <nav>
+            <div id="left">
+                <ul>
+                    <li><img src="img/lo1.jpg" alt="" width="80px " height="80px"></li>
+                    <li>SHOUT TO</li>
+                </ul>
+            </div>
+
+            <div id="nav1">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+
+                    <li>
+                        <a href="bwdw.html">资源</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="animal-3.html#dongwu">
+                                    <li>国家一级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu1">
+                                    <li>国家二级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu2">
+                                    <li>国家三级保护动物</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bwyy.html">危机</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="bwyy1.html#news1">
+                                    <li>乱砍乱伐</li>
+                                </a>
+                                <a href="bwyy1.html#news2">
+                                    <li>环境污染</li>
+                                </a>
+                                <a href="bwyy1.html#news3">
+                                    <li>乱捕滥猎</li>
+                                </a>
+                                <a href="bwyy1.html#news4">
+                                    <li>自然灾害</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cwzq.html">行动</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="cwzq1.html#news1">
+                                    <li>拒绝野味</li>
+                                </a>
+                                <a href="cwzq1.html#news2">
+                                    <li>不要打扰</li>
+                                </a>
+                                <a href="cwzq1.html#news3">
+                                    <li>拒绝饲养</li>
+                                </a>
+                                <a href="cwzq1.html#news4">
+                                    <li>注意防护</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我们</a>
+                        <div id="nr1">
+                            <ul>
+
+                                <a href="we1.html#hb">
+                                    <li>合作伙伴</li>
+                                </a>
+                                <a href="we1.html#lx">
+                                    <li>联系我们</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <div id="anmi"><img src="img/xmtb1.png" alt="" width="50px" height="50px"></div>
+            </div>
+        </nav>
+    </div>
+    <div id="sss"></div>
+    <div id="we">
+        <div id="right">
+            <div id="hb">
+                <div id="mbl">
+                    <a href="we.html">我们</a> >> <a href="we1.html#hb">合作伙伴</a>
+                </div>
+                <ul>
+                    <li>
+                        <img src="img/合作伙伴1.jpg" alt="" width="180px" height="120px">
+                        <p>世界动物保护协会</p>
+                    </li>
+                    <li>
+                        <img src="img/国际爱护动物基金会.jpg" alt="" width="180px" height="120px">
+                        <p>国际爱护动物基金会</p>
+                    </li>
+                    <li>
+                        <img src="img/国际野生生物保护学会.gif" alt="" width="180px" height="120px">
+                        <p>国际野生生物保护学会</p>
+                    </li>
+                    <li>
+                        <img src="img/中国野生动物保护协会.png" alt="" width="160px" height="160px">
+                        <p>中国野生动物保护协会</p>
+                    </li>
+                    <li>
+                        <img src="img/中国小动物保护协会.jpg" alt="" width="160px" height="160px">
+                        <p>中国小动物保护协会</p>
+                    </li>
+                    <li>
+                        <img src="img/桂林电子科技大学.jpg" alt="" width="160px" height="160px">
+                        <p>桂林电子科技大学</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="lx">
+                <div id="mbl">
+                    <a href="we.html">我们</a> >> <a href="we1.html#hb">联系我们</a>
+                </div>
+                <div id="gb">
+                    <img src="img/联系我们.jpg" alt="" width="1000px" height="450px">
+                </div>
+                <footer>
+                    <p><span>指导老师：</span>李新荣 </p>
+                    <p><span>制作人：</span>邓宇鑫 张忠毅</p>
+                    <p><span>电话：</span>15879542527</p>
+
+                </footer>
+                <div id="zti">
+                    <p><span>学校：</span>桂林电子科技大学北海校区</p>
+                    <p><span>地址：</span>广西北海市银海区银滩镇南珠大道9号</p>
+                </div>
+                <div id="ewm">
+                    <img src="img/qq1.jpg" title="QQ">
+                    <img src="img/微信.jpg" title="微信">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    #anmi {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 875px;
+        top: -52px;
+        transition: all 1s;
+        z-index: 999;
+    }
+</style>
+<script>
+    var nav1 = document.getElementById('nav1');
+    var anmi = document.getElementById('anmi');
+    var lilist = nav1.getElementsByTagName('li');
+    var lilist = nav1.querySelectorAll("ul>li")
+    lilist[0].onmousemove = function () {
+        anmi.style.left = '75px';
+    };
+    lilist[0].onmouseout = function () {
+        anmi.style.left = '875px';
+    };
+    lilist[1].onmousemove = function () {
+        anmi.style.left = '275px';
+    };
+    lilist[1].onmouseout = function () {
+        anmi.style.left = '875px';
+    };
+    lilist[3].onmousemove = function () {
+        anmi.style.left = '675px';
+    };
+    lilist[3].onmouseout = function () {
+        anmi.style.left = '875px';
+    };
+    lilist[2].onmousemove = function () {
+        anmi.style.left = '475px';
+    };
+    lilist[2].onmouseout = function () {
+        anmi.style.left = '875px';
+    };
+</script>
+
+</html>

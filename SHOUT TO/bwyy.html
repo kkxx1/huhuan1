@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>濒危原因</title>
+    <link rel="stylesheet" href="daohl.css">
+    <style>
+        * {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+
+        body {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
+        dl {
+            margin-top: 120px;
+            margin-bottom: 20px;
+            width: 1200px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        dd {
+            line-height: 38px;
+            font-size: 18px;
+            color: white;
+            width: 60%;
+            text-align: left;
+            margin: 5px 0 0 240px;
+        }
+
+        #news2 dd,
+        #news3 dd,
+        #news4 dd {
+            margin: 5px 0 0 255px;
+        }
+
+        :target {
+            display: block;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        .background {
+            background-color: rgb(60, 60, 60);
+            background-size: cover;
+        }
+
+        /* 濒危原因*/
+        #bwyy1 {
+            width: 1300px;
+            height: 700px;
+            margin: 200px auto 0;
+            text-align: center;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #bwyy1 h3,
+        #dongwu h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
+
+        #bwyy1 hr,
+        #dongwu hr {
+            width: 200px;
+            margin: 5px auto;
+        }
+
+        #bwyyul {
+            width: 850px;
+            margin-top: 40px;
+            height: 400px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #bwyy1 li {
+            width: 200px;
+            height: 400px;
+            border: 1px solid black;
+            float: left;
+            margin-left: 8px;
+        }
+
+        #bwyy1 a:nth-child(4) li {
+            margin-top: 49px;
+        }
+
+        #bwyy1 a:nth-child(2) li {
+            margin-top: 49px;
+        }
+
+        #bwyy1 ul #cont {
+            width: 200px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 1px;
+            display: none;
+        }
+
+        #bwyy1 a:nth-child(2) #cont,
+        #bwyy1 a:nth-child(4) #cont {
+            position: absolute;
+            top: 50px;
+        }
+
+        #bwyy1 ul li:hover #cont {
+            display: block;
+        }
+
+        #bwyy1 h1 {
+            margin: 150px auto;
+            height: 200px;
+            color: white;
+        }
+
+        #bwyy1 p {
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            color: white;
+        }
+
+        #p1 {
+            width: 50%;
+            text-align: left;
+            margin: 20px auto;
+        }
+
+        #p1 p {
+            font-size: 14px;
+            line-height: 30px;
+            text-indent: 2em;
+            display: block;
+        }
+
+        #bwyy1 span,
+        #dongwu span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <!-- 返回顶部火箭 -->
+    <div id="firetop"></div>
+    <div id="newnav">
+        <nav>
+            <div id="left">
+                <ul>
+                    <li><img src="img/lo1.jpg" alt="" width="80px " height="80px"></li>
+                    <li>SHOUT TO</li>
+                </ul>
+            </div>
+
+            <div id="nav1">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+
+                    <li>
+                        <a href="bwdw.html">资源</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="animal-3.html#dongwu">
+                                    <li>国家一级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu1">
+                                    <li>国家二级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu2">
+                                    <li>国家三级保护动物</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bwyy.html">危机</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="bwyy1.html#news1">
+                                    <li>乱砍乱伐</li>
+                                </a>
+                                <a href="bwyy1.html#news2">
+                                    <li>环境污染</li>
+                                </a>
+                                <a href="bwyy1.html#news3">
+                                    <li>乱捕滥猎</li>
+                                </a>
+                                <a href="bwyy1.html#news4">
+                                    <li>自然灾害</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cwzq.html">行动</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="cwzq1.html#news1">
+                                    <li>拒绝野味</li>
+                                </a>
+                                <a href="cwzq1.html#news2">
+                                    <li>不要打扰</li>
+                                </a>
+                                <a href="cwzq1.html#news3">
+                                    <li>拒绝饲养</li>
+                                </a>
+                                <a href="cwzq1.html#news4">
+                                    <li>注意防护</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我们</a>
+                        <div id="nr1">
+                            <ul>
+
+                                <a href="we1.html#hb">
+                                    <li>合作伙伴</li>
+                                </a>
+                                <a href="we1.html#lx">
+                                    <li>联系我们</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <div id="anmi"><img src="img/xmtb1.png" alt="" width="50px" height="50px"></div>
+            </div>
+
+        </nav>
+    </div>
+    <div id="sss"></div>
+    <!-- 濒危原因 -->
+    <div id="bwyy1">
+        <h3>动物·<span>濒危</span>·原因</h3>
+        <hr>
+        <p>Causes of endangerment</p>
+        <hr>
+        <div id="p1">
+            <p>濒危动物指由于动物分布区、栖息地的生态系统遭到严重破坏,化学污染、气候变化和人类随意捕杀等原因导致濒临灭绝的动物类群。全世界处于濒临灭绝状态的脊椎动物有100多种,约有14的物种是由于自然演化造成的。其余的则是由于人为的因素。
+            </p>
+        </div>
+        <ul id="bwyyul">
+            <a href="bwyy1.html#news1">
+                <li>
+                    <img src="img/83.jpg" alt="">
+                    <div id="cont">
+                        <h1>人为破坏</h1>
+                    </div>
+                </li>
+            </a>
+            <a href="bwyy1.html#news2">
+                <li>
+                    <img src="img/81.jpg" alt="">
+                    <div id="cont">
+                        <h1>环境污染</h1>
+                    </div>
+                </li>
+            </a>
+            <a href="bwyy1.html#news3">
+                <li>
+                    <img src="img/82.jpg" alt="">
+                    <div id="cont">
+                        <h1>乱捕滥猎</h1>
+                    </div>
+                </li>
+            </a>
+            <a href="bwyy1.html#news4">
+                <li>
+                    <img src="img/84.jpg" alt="">
+                    <div id="cont">
+                        <h1>自然灾害</h1>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </div>
+</body>
+<style>
+    #anmi {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 475px;
+        top: -52px;
+        transition: all 1s;
+        z-index: 999;
+    }
+</style>
+<script>
+    var nav1 = document.getElementById('nav1');
+    var anmi = document.getElementById('anmi');
+    var lilist = nav1.getElementsByTagName('li');
+    var lilist = nav1.querySelectorAll("ul>li")
+    lilist[0].onmousemove = function () {
+        anmi.style.left = '75px';
+    };
+    lilist[0].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+    lilist[1].onmousemove = function () {
+        anmi.style.left = '275px';
+    };
+    lilist[1].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+    lilist[3].onmousemove = function () {
+        anmi.style.left = '675px';
+    };
+    lilist[3].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+    lilist[4].onmousemove = function () {
+        anmi.style.left = '875px';
+    };
+    lilist[4].onmouseout = function () {
+        anmi.style.left = '475px';
+    };
+</script>
+<script>
+
+    // 火箭
+    // 当网页向下滑动 30px 出现"返回顶部" 按钮
+    (function () {
+        var firetop = document.getElementById('firetop');
+        //当有滚动时触发事件
+        window.onscroll = function () {
+            var num = window.scrollY;//获取滚动条的移动距离
+            var num1 = window.innerHeight;//屏幕可视区的高度
+            if (num > 200) {
+                firetop.style.display = 'block';//让回到顶部的小火箭出现
+            } else if (num <= 0) {
+                firetop.style.bottom = num1 + 'px';//改变定位的位置
+            }
+        }
+        //点击事件
+        firetop.onclick = function () {
+            var scrolltop = window.scrollY;
+            var timer = setInterval(function () {//定时器启动
+                scrolltop -= 50;
+                if (scrolltop <= -window.innerHeight) {
+                    firetop.style.display = 'none'; //小火箭隐藏
+                    firetop.style.animation = '';   //清除动画
+                    firetop.style.bottom = 0 + 'px';    //还原小火箭位置
+                    clearInterval(timer);
+                }
+                window.scrollTo(0, scrolltop);//设置滚动条距离顶部的距离
+            }, 30);
+            this.style = 'animation:move 2s steps(4, end) infinite;'//给动画
+        }
+
+    })();
+</script>
+
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保护动物，从我做起</title>
+    <link rel="stylesheet" href="daohl.css">
+    <style>
+        * {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+            text-decoration: none;
+        }
+
+        /* dt{text-align: center;}
+        dl{display: none;margin-top: 150px;}
+        dd{line-height: 38px;font-size: 18px;color: white;width: 60%;text-align: left;margin: 5px auto;}
+        :target{display: block;} */
+        img {
+            cursor: pointer;
+        }
+
+        .background {
+            background-color: rgb(60, 60, 60);
+            background-size: cover;
+        }
+
+        /* 从我做起 */
+        #cwzq {
+            width: 1400px;
+            height: 600px;
+            margin: 20px auto;
+            position: relative;
+            margin-top: 200px;
+        }
+
+        #cwzq ul {
+            width: 70%;
+            height: 500px;
+            margin: 50px auto 0;
+        }
+
+        #cwzq ul li {
+            width: 49%;
+            height: 250px;
+            border: 1px solid black;
+            float: left;
+            margin: 0 5px 5px 0;
+            position: relative;
+            background-color: white;
+        }
+
+        #cwzq #img1 {
+            width: 25%;
+            height: 250px;
+            position: absolute;
+            left: 0;
+            padding-left: 10px;
+            display: block;
+        }
+
+        #cwzq #img2 {
+            width: 70%;
+            height: 250px;
+            position: absolute;
+            right: 0;
+            display: block;
+        }
+
+        #cwzq #img2 p {
+            display: block;
+        }
+
+        #cwzq #img2 p:nth-child(2) {
+            padding: 0 20px 0 0;
+            display: block;
+            text-align: left;
+        }
+
+        #cwzq li p:nth-child(2) {
+            text-indent: 2em;
+            margin-top: 10px;
+            color: gray;
+            font-size: 14px;
+            line-height: 26px;
+            display: block;
+        }
+
+        #cwzq li p:first-child {
+            letter-spacing: 5px;
+            width: 100%;
+            height: 28px;
+            font-size: 20px;
+            border-bottom: 1px dashed red;
+            text-align: left;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        #cwzq #yuanquan #yuanquan1 {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 150px;
+            margin: 20px auto;
+            background-color: rgb(255, 0, 0);
+            z-index: 6;
+            position: absolute;
+            top: 30px;
+            left: 550px;
+            color: azure;
+            font-size: 24px;
+            font-family: "楷体";
+        }
+
+        #cwzq #yuanquan #yuanquan2 {
+            width: 130px;
+            height: 130px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 130px;
+            margin: 20px auto;
+            background-color: rgb(233, 163, 14);
+            z-index: 5;
+            position: absolute;
+            top: 60px;
+            left: 540px;
+            color: azure;
+            font-size: 20px;
+            font-family: "仿宋";
+        }
+
+        #cwzq #yuanquan #yuanquan3 {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 100px;
+            margin: 20px auto;
+            background-color: rgb(96, 216, 73);
+            z-index: 4;
+            position: absolute;
+            top: 30px;
+            left: 610px;
+        }
+
+        #cwzq #sanjiao1 {
+            width: 0px;
+            height: 0px;
+            border: 25px solid;
+            border-color: transparent transparent transparent red;
+            position: absolute;
+            top: 100px;
+            left: 430px;
+        }
+
+        #cwzq #sanjiao2 {
+            width: 0px;
+            height: 0px;
+            border: 18px solid;
+            border-color: transparent transparent transparent red;
+            position: absolute;
+            top: 108px;
+            left: 490px;
+        }
+
+        #cwzq #sanjiao3 {
+            width: 0px;
+            height: 0px;
+            border: 25px solid;
+            border-color: transparent red transparent transparent;
+            position: absolute;
+            top: 100px;
+            left: 770px;
+        }
+
+        #cwzq #sanjiao4 {
+            width: 0px;
+            height: 0px;
+            border: 18px solid;
+            border-color: transparent red transparent transparent;
+            position: absolute;
+            top: 108px;
+            left: 730px;
+        }
+
+        #cwzq #hengxian1 {
+            width: 400px;
+            border-top: 3px solid red;
+            position: absolute;
+            top: 125px;
+            left: 0px;
+        }
+
+        #cwzq #hengxian2 {
+            width: 370px;
+            border-top: 3px solid red;
+            position: absolute;
+            top: 125px;
+            right: 0px;
+        }
+
+        #cwzq #yuanquan:hover #sanjiao1 {
+            border-color: transparent transparent transparent royalblue;
+            transform: rotate(-360deg);
+            transition: all 1s;
+        }
+
+        #cwzq #yuanquan:hover #sanjiao2 {
+            border-color: transparent transparent transparent royalblue;
+            transform: rotate(-360deg);
+            transition: all 1s;
+        }
+
+        #cwzq #yuanquan:hover #sanjiao3 {
+            border-color: transparent royalblue transparent transparent;
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+
+        #cwzq #yuanquan:hover #sanjiao4 {
+            border-color: transparent royalblue transparent transparent;
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+
+        #cwzq #yuanquan:hover #hengxian>div {
+            border-top: 3px solid royalblue;
+            transition: all 1s;
+        }
+
+        #cwzq a {
+            color: black;
+        }
+
+        nav #nav1 li:nth-child(4):hover #nr1 {
+            height: 220px;
+        }
+
+        nav #nav1 li:nth-child(3):hover #nr1 {
+            height: 220px;
+        }
+
+        nav #nav1 li:nth-child(5):hover #nr1 {
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <div id="newnav">
+        <nav>
+            <div id="left">
+                <ul>
+                    <li><img src="img/lo1.jpg" alt="" width="80px " height="80px"></li>
+                    <li>SHOUT TO</li>
+                </ul>
+            </div>
+
+            <div id="nav1">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+
+                    <li>
+                        <a href="bwdw.html">资源</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="animal-3.html#dongwu">
+                                    <li>国家一级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu1">
+                                    <li>国家二级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu2">
+                                    <li>国家三级保护动物</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bwyy.html">危机</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="bwyy1.html#news1">
+                                    <li>乱砍乱伐</li>
+                                </a>
+                                <a href="bwyy1.html#news2">
+                                    <li>环境污染</li>
+                                </a>
+                                <a href="bwyy1.html#news3">
+                                    <li>乱捕滥猎</li>
+                                </a>
+                                <a href="bwyy1.html#news4">
+                                    <li>自然灾害</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cwzq.html">行动</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="cwzq1.html#news1">
+                                    <li>拒绝野味</li>
+                                </a>
+                                <a href="cwzq1.html#news2">
+                                    <li>不要打扰</li>
+                                </a>
+                                <a href="cwzq1.html#news3">
+                                    <li>拒绝饲养</li>
+                                </a>
+                                <a href="cwzq1.html#news4">
+                                    <li>注意防护</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我们</a>
+                        <div id="nr1">
+                            <ul>
+
+                                <a href="we1.html#hb">
+                                    <li>合作伙伴</li>
+                                </a>
+                                <a href="we1.html#lx">
+                                    <li>联系我们</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <div id="anmi"><img src="img/xmtb1.png" alt="" width="50px" height="50px"></div>
+            </div>
+        </nav>
+    </div>
+    <div id="sss"></div>
+    <div id="cwzq">
+        <ul>
+            <a href="cwzq1.html#news2">
+                <li>
+                    <div id="img1"><img src="img/xmtb.png" width="100px" height="100px" style="margin-top: 70px;"></div>
+                    <div id="img2">
+                        <p>不要打扰</p>
+                        <p>不要打扰野生动物栖息、繁殖、活动环境，自觉远离野生动物，自觉爱护野生动物迁徙停歇地、繁殖地和越冬地。不要盲目和过度开发森林和破坏生态环境，给野生动物一个良好的生存空间</p>
+                    </div>
+                </li>
+            </a>
+            <a href="cwzq1.html#news1">
+                <li>
+                    <div id="img1"><img src="img/xmtb.png" width="100px" height="100px" style="margin-top: 40px;"><img
+                            src="img/xmtb.png" width="100px" height="100px" style="margin-top: -50px;"></div>
+                    <div id="img2">
+                        <p>拒绝食用</p>
+                        <p>坚决做到不猎捕，杀害野生动物，拒绝野生动物当“盘中餐”和商品，坚决摒弃滥食野生动物的陋习，坚决食用、使用野生动物及其制品。</p>
+                    </div>
+                </li>
+            </a>
+            <a href="cwzq1.html#news4">
+                <li>
+                    <div id="img1"><img src="img/xmtb.png" width="100px" height="100px" style="margin-top: 20px;"><img
+                            src="img/xmtb.png" width="100px" height="100px" style="margin-top: -50px;"><img
+                            src="img/xmtb.png" width="100px" height="100px" style="margin-top: -50px;"></div>
+                    <div id="img2">
+                        <p>注意防护</p>
+                        <p>发现不明原因受伤、病危、死亡的以上的时 ，不可视而不见或私养，禁止徒手抓拿，食用或买卖，在保护自身安全和避免直接接触的情况下，要立即向林业和草原管理部门报告。</p>
+                    </div>
+                </li>
+            </a>
+            <a href="cwzq1.html#news3">
+                <li>
+                    <div id="img1"><img src="img/xmtb.png" width="100px" height="100px" style="margin-top: -10px;"><img
+                            src="img/xmtb.png" width="100px" height="100px" style="margin-top: -50px;"><img
+                            src="img/xmtb.png" width="100px" height="100px" style="margin-top: -50px;"><img
+                            src="img/xmtb.png" width="100px" height="100px" style="margin-top: -50px;"></div>
+                    <div id="img2">
+                        <p>拒绝饲养</p>
+                        <p>不购买、不饲养野生动物。野生动物属于大自然，人类不应当限制其自由。各种野生飞禽、爬行类动物，身上都有无数未知病毒，不饲养，不仅是对野生动物的保护，更是对人类自身安全的保护。</p>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <style>
+        #anmi {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            left: 675px;
+            top: -52px;
+            transition: all 1s;
+            z-index: 999;
+        }
+    </style>
+    <script>
+        var nav1 = document.getElementById('nav1');
+        var anmi = document.getElementById('anmi');
+        var lilist = nav1.getElementsByTagName('li');
+        var lilist = nav1.querySelectorAll("ul>li")
+        lilist[0].onmousemove = function () {
+            anmi.style.left = '75px';
+        };
+        lilist[0].onmouseout = function () {
+            anmi.style.left = '675px';
+        };
+        lilist[2].onmousemove = function () {
+            anmi.style.left = '475px';
+        };
+        lilist[2].onmouseout = function () {
+            anmi.style.left = '675px';
+        };
+        lilist[1].onmousemove = function () {
+            anmi.style.left = '275px';
+        };
+        lilist[1].onmouseout = function () {
+            anmi.style.left = '675px';
+        };
+        lilist[4].onmousemove = function () {
+            anmi.style.left = '875px';
+        };
+        lilist[4].onmouseout = function () {
+            anmi.style.left = '675px';
+        };
+    </script>
+</body>
+
+</html>

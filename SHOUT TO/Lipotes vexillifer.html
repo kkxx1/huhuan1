@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白鳍豚</title>
+    <link rel="stylesheet" href="daohl.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #nav {
+            width: 100%;
+            height: 100px;
+        }
+
+        #name {
+            width: 100%;
+            height: 600px;
+            background: rgb(60, 60, 60);
+            position: relative;
+            margin-top: 150px;
+        }
+
+        #name1 {
+            margin: 0 auto;
+            top: 35px;
+            border: 1px solid red;
+            width: 1000px;
+            height: 530px;
+            background: rgb(60, 60, 60);
+            border: 1px solid black;
+            box-shadow: 5px 5px 8px rgb(0, 0, 0), -5px -5px 8px rgb(19, 18, 18);
+            position: relative;
+        }
+
+        #name1 h2 {
+            color: white;
+            text-align: center;
+            height: 80px;
+            border-bottom: 1px solid black;
+            line-height: 80px;
+        }
+
+        #name img {
+            width: 600px;
+            height: 400px;
+        }
+
+        #name1 ul {
+            width: 100%;
+        }
+
+        #name1 ul li {
+            float: left;
+            color: white;
+        }
+
+        #name1 ul li:first-child {
+            width: 500px;
+            height: 450px;
+            padding: 24px 0 0 20px;
+        }
+
+        #name1 ul li:last-child {
+            width: 350px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+            line-height: 40px;
+            padding-top: 80px;
+        }
+
+        #content {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        #content h2 {
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #content ul {
+            width: 1200px;
+            height: 300px;
+            margin: 50px auto 0;
+        }
+
+        #content ul li {
+            color: gray;
+            width: 60%;
+            height: 300px;
+            float: left;
+            margin: 30px 0 0 5px;
+            line-height: 25px;
+            padding: 20px 0 0 20px;
+        }
+
+        #content ul li:last-child {
+            width: 30%;
+            border-left: 1px solid rgba(0, 0, 0, 0.322);
+            line-height: 30px;
+            height: 200px;
+            color: black;
+            margin-left: 30px;
+            padding-left: 30px;
+        }
+
+        #imgs {
+            width: 100%;
+            height: 350px;
+            background: rgb(61, 58, 58);
+        }
+
+        #imgs1 {
+            width: 1200px;
+            height: 350px;
+            margin: 0 auto;
+        }
+
+        #imgs1 li {
+            width: 300px;
+            height: 200px;
+            float: left;
+            margin: 80px 0 0 75px;
+            text-align: center;
+            color: white;
+        }
+
+        #imgs1 img {
+            width: 300px;
+            height: 200px;
+        }
+
+        #cont2 {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 50px;
+        }
+
+        #cont3 {
+            width: 1000px;
+            height: 500px;
+            ;
+            margin: 20px auto 0;
+        }
+
+        #cont3 li {
+            width: 47%;
+            height: 500px;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #cont3 li h2 {
+            color: #939597;
+            width: 200px;
+            height: 40px;
+            background: #F5df4d;
+            margin: 40px 0 10px 0;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #cont3 li p {
+            color: gray;
+            letter-spacing: 1px;
+            text-indent: 2em;
+            line-height: 28px;
+        }
+    </style>
+</head>
+
+<body id="bg">
+    <!-- 返回顶部火箭 -->
+    <div id="firetop"></div>
+    <!-- 导航栏设置 -->
+    <div id="newnav">
+        <nav>
+            <div id="left">
+                <ul>
+                    <li><img src="img/lo1.jpg" alt="" width="80px " height="80px"></li>
+                    <li>SHOUT TO</li>
+                </ul>
+            </div>
+
+            <div id="nav1">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+
+                    <li>
+                        <a href="bwdw.html">资源</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="animal-3.html#dongwu">
+                                    <li>国家一级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu1">
+                                    <li>国家二级保护动物</li>
+                                </a>
+                                <a href="animal-3.html#dongwu2">
+                                    <li>国家三级保护动物</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bwyy.html">危机</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="bwyy1.html#news1">
+                                    <li>乱砍乱伐</li>
+                                </a>
+                                <a href="bwyy1.html#news2">
+                                    <li>环境污染</li>
+                                </a>
+                                <a href="bwyy1.html#news3">
+                                    <li>乱捕滥猎</li>
+                                </a>
+                                <a href="bwyy1.html#news4">
+                                    <li>自然灾害</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cwzq.html">行动</a>
+                        <div id="nr1">
+                            <ul>
+                                <a href="cwzq1.html#news1">
+                                    <li>拒绝野味</li>
+                                </a>
+                                <a href="cwzq1.html#news2">
+                                    <li>不要打扰</li>
+                                </a>
+                                <a href="cwzq1.html#news3">
+                                    <li>拒绝饲养</li>
+                                </a>
+                                <a href="cwzq1.html#news4">
+                                    <li>注意防护</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我们</a>
+                        <div id="nr1">
+                            <ul>
+
+                                <a href="we1.html#hb">
+                                    <li>合作伙伴</li>
+                                </a>
+                                <a href="we1.html#lx">
+                                    <li>联系我们</li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <div id="anmi"><img src="img/xmtb1.png" alt="" width="50px" height="50px"></div>
+            </div>
+        </nav>
+    </div>
+    <style>
+        #anmi {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            left: 275px;
+            top: -52px;
+            transition: all 1s;
+            z-index: 999;
+        }
+    </style>
+    <script>
+        var nav1 = document.getElementById('nav1');
+        var anmi = document.getElementById('anmi');
+        var lilist = nav1.getElementsByTagName('li');
+        var lilist = nav1.querySelectorAll("ul>li")
+        lilist[0].onmousemove = function () {
+            anmi.style.left = '75px';
+        };
+        lilist[0].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+        lilist[2].onmousemove = function () {
+            anmi.style.left = '475px';
+        };
+        lilist[2].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+        lilist[3].onmousemove = function () {
+            anmi.style.left = '675px';
+        };
+        lilist[3].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+        lilist[4].onmousemove = function () {
+            anmi.style.left = '875px';
+        };
+        lilist[4].onmouseout = function () {
+            anmi.style.left = '275px';
+        };
+    </script>
+    <div id="sss"></div>
+    <div id="name">
+        <div id="name1">
+            <h2>白鳍豚 Lipotes vexillifer</h2>
+            <ul>
+                <li><img src="animals/img/白鳍豚1.jpg" alt=""></li>
+                <li>
+                    <p>界：动物界</p>
+                    <p>门：脊索动物门</p>
+                    <p>纲：哺乳纲</p>
+                    <p>目：鲸偶蹄目</p>
+                    <p>科：白暨豚科</p>
+                    <p>分布地区：中国长江中下游及洞庭湖等水域中</p>
+                    <p>保护级别：极危（CR） IUCN标准 </p>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <ul>
+            <h2>物种概述</h2>
+            <li>
+                <p>学名：Lipotes vexillifer</p>
+                <p>中文名：白鳍豚</p>
+                <p>中国物种红色名录： 极危（CR）</p><br>
+                <p>白鳍豚是哺乳纲、鲸目的一科水生动物，仅有一个物种即“白暨豚”。“暨”音 jì；媒体也常写作“白鳍豚”，
+                    是中国特有的一种小型淡水鲸。体呈纺锤形，体长1.5-2.5米，体重可达230千克。吻部似鸟喙般向前伸出，窄而长，吻尖略向上翘，
+                    约30厘米。额顶显著隆起，鼻孔长在头顶，呼吸时，头部先出水，喷出的水花不高。</p>
+                <p></p>
+            </li>
+            <li>
+                <p><strong>体重</strong>：230千克</p>
+                <p><strong>体长</strong>：1.5-2.5米</p>
+                <p><strong>食性</strong>：淡水鱼类为食</p>
+                <p><strong>寿命</strong>：30多年</p>
+                <p><strong>繁殖</strong>：每胎一仔，偶有双胞胎</p>
+                <p></p>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+    <div id="imgs">
+        <ul id="imgs1">
+            <li>
+                <img src="animals/img/白鳍豚2.jfif" alt="">
+                <p>白鳍豚</p>
+            </li>
+            <li>
+                <img src="animals/img/白鳍豚3.jfif" alt="">
+                <p>白鳍豚</p>
+            </li>
+            <li>
+                <img src="animals/img/白鳍豚4.jfif" alt="">
+                <p>白鳍豚</p>
+            </li>
+        </ul>
+    </div>
+    <div id="cont2">
+        <ul id="cont3">
+            <li>
+                <h2>形态特征</h2>
+                <p>白暨豚雌性成体最大体长253厘米，雄性成体229厘米，体型大小的性二型明显。白暨豚体形中等粗壮，有狭长而稍微上翘的喙，圆的额隆，
+                    低三角形的背鳍位于从吻端向后约2/3体长处，是其最显著的野外识别特征。</p>
+                <h2>栖息环境</h2>
+                <p>白暨豚栖息在中国长江和钱塘江的下游，以及鄱阳湖和洞庭湖。它们喜欢留在沙洲旁边形成的大漩涡附近。主要栖于长江及其支流、湖泊的入口处和江心沙洲附近的长江干流中。水深一般为10-20米，流速每秒1米左右。
+                </p>
+                <h2>分布范围</h2>
+                <p>白暨豚是中国长江中下游特有物种。历史上西起宜昌西陵峡，东至上海长江口，全长约1700千米的长江江段都有白暨豚出没，包括洞庭湖、鄱阳湖等毗连长江干流的大小湖泊及河港，甚至还曾在富春江出现过。</p>
+            </li>
+            <li>
+                <h2>繁殖方式</h2>
+                <p>白暨豚的自然繁殖率很低，野生状态下雌性受孕率一般仅为30%，成年雌性一年中有两次发情期，分别在3-6月和9-11月。妊娠期10-11个月，翌年2-4月分娩。每两年繁殖一次，每胎一仔，偶有双胞胎。母豚长有乳裂，哺乳时乳房从乳裂中伸出。
+                </p>
+                <h2>生活习性</h2>
+                <p>白暨豚有恒定体温，在36℃左右。对水温条件要求较高，常在一个固定区域停留一段时间，水温变化后又迁入另一区域。习惯栖息于江流中心的深水区，也会进入湖泊、支流与干流汇合处。主要在白天活动，夜间休息。胆怯害羞，很少靠近岸边和船只。
+                </p>
+
+            </li>
+        </ul>
+    </div>
+
+    </div>
+</body>
+<script>
+    function change_bg(obj) {
+        var a = document.getElementById("nav nav1").getElementsByTagName("a");
+        for (var i = 0; i < a; i++) {
+            a[i].className = " ";
+        }
+        obj.className = "current";
+    }
+    // 火箭
+    // 当网页向下滑动 30px 出现"返回顶部" 按钮
+    (function () {
+        var firetop = document.getElementById('firetop');
+        //当有滚动时触发事件
+        window.onscroll = function () {
+            var num = window.scrollY;//获取滚动条的移动距离
+            var num1 = window.innerHeight;//屏幕可视区的高度
+            if (num > 200) {
+                firetop.style.display = 'block';//让回到顶部的小火箭出现
+            } else if (num <= 0) {
+                firetop.style.bottom = num1 + 'px';//改变定位的位置
+            }
+        }
+        //点击事件
+        firetop.onclick = function () {
+            var scrolltop = window.scrollY;
+            var timer = setInterval(function () {//定时器启动
+                scrolltop -= 50;
+                if (scrolltop <= -window.innerHeight) {
+                    firetop.style.display = 'none'; //小火箭隐藏
+                    firetop.style.animation = '';   //清除动画
+                    firetop.style.bottom = 0 + 'px';    //还原小火箭位置
+                    clearInterval(timer);
+                }
+                window.scrollTo(0, scrolltop);//设置滚动条距离顶部的距离
+            }, 30);
+            this.style = 'animation:move 2s steps(4, end) infinite;'//给动画
+        }
+
+    })();
+</script>
+
+</html>
